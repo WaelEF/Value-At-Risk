@@ -328,7 +328,7 @@ server <- function(input, output, session){
       }
       # Define new input
       newInput <- selectizeInput(newInputId, newInputLabel, choices=titres, selected=newInputValue)
-      ValeurTitre <-  numericInput(newInputVal, label = paste("Valeur du titre",i), value = newInputValz )
+      ValeurTitre <-  numericInput(newInputVal, label = paste("Valeur du titre ",i), value = newInputValz )
       
       # Append new input to list of existing inputs
       inputTagList <<- tagAppendChild(inputTagList, newInput)
