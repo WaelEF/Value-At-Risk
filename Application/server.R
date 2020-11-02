@@ -316,7 +316,7 @@ server <- function(input, output, session){
       # Define unique input id and label
       newInputId <- paste0("input", i)
       newInputVal <- paste0("Value", i)
-      newInputLabel <- paste0("Titre", i)
+      newInputLabel <- paste0("Titre ", i)
       # Prevent dynamic inputs from resetting
       newInputValue <- "Option 1"
       if (newInputId %in% names(input)) {
